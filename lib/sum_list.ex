@@ -1,7 +1,7 @@
 defmodule SumList do
   def call(list), do: sum(list, 0)
 
-  def call_enum(list), do: Enum.any?(list, fn el -> el > 5 end)
+  def call_enum(list), do: Enum.sum(list)
 
   defp sum([], acc) do
     acc
